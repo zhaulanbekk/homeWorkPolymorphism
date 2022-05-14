@@ -13,20 +13,22 @@ public class Main {
         Shark[] sharks=new Shark[8];
 
 
+
+
         Animal[] animals = {eagle, turtle, shark};
         for (Animal animal1 : animals) {
             if (animal1 instanceof Eagle) {
                 ((Eagle) animal1).fly();
                 System.out.println(eagle.getClass());
-                eagles[0]=(Eagle) animal1;
+                eagles[0]= (Eagle) animal1;
             } else if (animal1 instanceof Turtle) {
                 ((Turtle) animal1).swim();
                 System.out.println(turtle.getClass());
-                turtles[1]=(Turtle) animal1;
+                turtles[0]=(Turtle) animal1;
             } else if (animal1 instanceof Shark) {
                 ((Shark) animal1).attack();
                 System.out.println(shark.getClass());
-                sharks[2] = (Shark)animal1;
+                sharks[0] = (Shark)animal1;
             }
         }
     }
